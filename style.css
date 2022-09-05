@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    height: 320px;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card {
+    position: absolute;
+    width: 427px;
+    height: 320px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.direita {
+    padding: 25px;
+    float: right;
+    width: 50%;
+    height: 100%;    
+}
+
+h1 {
+    font-size: 9px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.nome {
+    font-family: Fraunces;
+    font-size: 21px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    color: hsl(212, 21%, 14%);
+}
+
+.descricao {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.preco {
+    float: left;
+    font-family: Fraunces;
+    font-size: 22px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+
+.promocao {
+    font-family: Montserrat;
+    font-size: 9px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-top: 30px;
+}
+
+.botao {
+    width: 100%;
+    height: 32px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+    margin-top: 30px;
+    padding: 10px;
+    font-family: Montserrat;
+}
+
+.car {
+    height: 12px;
+    margin-left: 30px;
+    margin-right: 8px;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 257px;
+        height: 460px;
+    }
+
+    img {
+        height: 180px;
+        border-radius: 10px 10px 0px 0px;
+        }
+
+    .direita {
+        float: none;
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 170px;
+    }
+
+    .descricao {
+        font-size: 9px;
+    }
+}
